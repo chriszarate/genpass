@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=240,user-scalable=no">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta name="format-detection" content="telephone=no">
+
+		<link rel="apple-touch-icon-precomposed" href="img/gp@57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/gp@72x72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/gp@114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/gp@144x144.png">
+
+		<link rel="alternate" lang="fr" hreflang="fr" title="En français" href="?fr">
+		<link rel="alternate" lang="es" hreflang="es" title="En español" href="?es">
+		<link rel="alternate" lang="de" hreflang="de" title="Auf Deutsch" href="?de">
+		<link rel="alternate" lang="pt-br" hreflang="pt-br" title="No português brasileiro" href="?pt-br">
+		<link rel="alternate" lang="zh-hk" hreflang="zh-hk" title="繁體中文" href="?zh-hk">
+		<link rel="alternate" lang="hu" hreflang="hu" title="Magyarul" href="?hu">
+		<link rel="alternate" lang="ru" hreflang="ru" title="ру́сский" href="?ru">
+
+		<!-- See unminified CSS at https://github.com/chriszarate/genpass -->
+		<link rel="stylesheet" href="../../build/mobile.min.css" inline="true">
+
+		<title>GenPass</title>
+
+	</head>
+
+	<body>
+
+		<div id="main">
+
+			<h1>GenPass</h1>
+
+			<noscript>Requires JavaScript!</noscript>
+
+			<div id="Update">Updated bookmarklet: <a id="Bookmarklet" href="#">GenPass</a></div>
+
+			<form action="#" novalidate="novalidate">
+
+				<fieldset id="PasswdField">
+					<input id="Passwd" type="password" placeholder="Master password">
+					<label for="Passwd" class="placeholder">Master password</label>
+				</fieldset>
+
+				<fieldset id="DomainField">
+					<input id="Domain" type="url" placeholder="Domain / URL" autocorrect="off" autocapitalize="off">
+					<label for="Domain" class="placeholder">Domain / URL</label>
+				</fieldset>
+
+				<fieldset id="CaseField">
+					<input id="CaseUpper" name="Case" type="radio" value="uppercase">
+					<label for="CaseUpper" class="Button">ABC</label>
+					<input id="CaseMixed" name="Case" type="radio" value="mixed">
+					<label for="CaseMixed" class="Button">AbC</label>
+					<input id="CaseLower" name="Case" type="radio" value="lowercase" checked="checked">
+					<label for="CaseLower" class="Button">abc</label>
+				</fieldset>
+
+				<fieldset id="LenField">
+					<input id="Len" type="text" pattern="[0-9]*" value="8" maxlength="2">
+					<label id="Down" class="Button">–</label><label id="Up" class="Button">+</label>
+				</fieldset>
+
+				<div id="Generate" class="Field Button">Generate</div>
+
+        <div id="Mask" class="Field">****************</div>
+				<div id="Output" class="Field"></div>
+
+			</form>
+
+		</div>
+
+		<!-- See unminified JS at https://github.com/chriszarate/genpass -->
+		<script src="../../build/mobile.min.js" inline="true"></script>
+
+	</body>
+
+</html>

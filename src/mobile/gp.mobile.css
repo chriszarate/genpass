@@ -1,0 +1,326 @@
+/* Basic */
+
+body {
+   width: auto;
+   max-width: 320px;
+   margin: 0 auto;
+   padding: 0;
+   color: #333;
+   background-color: #698;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1 {
+   margin: 0;
+   margin-bottom: 10px;
+   font-size: 1.25em;
+}
+
+noscript {
+   margin-top: 10px;
+   color: #f33;
+}
+
+* {
+   -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Container */
+
+#main {
+   margin-top: 50px;
+   padding: 25px;
+   background-color: #fff;
+   border-radius: 4px;
+}
+
+
+/* Update notification */
+
+#Update {
+   display: none;
+   padding: 5px;
+   background-color: #fcc;
+   text-align: center;
+}
+
+#Update a {
+   color: #311;
+   text-decoration: underline;
+}
+
+
+/* Form elements */
+
+form {
+   margin: 0;
+}
+
+fieldset {
+   position: relative;
+   margin: 0;
+   margin-top: 10px;
+   padding: 0;
+   border: none;
+}
+
+input {
+   background-color: #fff;
+   border: solid 2px #ccc;
+   border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+}
+
+input:focus {
+   outline: none;
+   border-color: #9cb;
+}
+
+label {
+   font-size: 14px;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+/* Placeholders */
+
+label.placeholder {
+   display: none;
+   position: absolute;
+   top: 11px;
+   left: 12px;
+   color: #ccc;
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+:-moz-placeholder {
+   color: #ccc;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+::-moz-placeholder {
+   color: #ccc;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+:-ms-input-placeholder {
+   color: #ccc;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.Missing label { color: #d66; }
+.Missing input::-webkit-input-placeholder { color: #d66; }
+.Missing input:::-moz-placeholder { color: #d66; }
+.Missing input::-moz-placeholder { color: #d66; }
+.Missing input:-ms-input-placeholder { color: #d66; }
+.Missing input { border-color: #d66; }
+
+
+/* Text fields */
+
+#Passwd, #Domain {
+   width: 100%;
+   height: 38px;
+   margin: 0;
+   padding: 8px 10px;
+   font-size: 15px;
+}
+
+#Passwd {
+   padding-right: 30px;
+}
+
+#PasswdField, #DomainField {
+   clear: both;
+}
+
+
+/* Length field */
+
+#LenField input {
+   float: left;
+   width: 38px;
+   height: 31px;
+   margin: 0;
+   padding: 5px;
+   font-size: 14px;
+   border-radius: 4px 0 0 4px;
+}
+
+#LenField label {
+   float: left;
+   width: 24px;
+   height: 16px;
+   margin: 0;
+   padding: 6px 0;
+   padding-bottom: 7px;
+   color: #999;
+   background-color: #ccc;
+   font-size: 14px;
+   font-weight: bold;
+   text-align: center;
+   border-bottom: solid 2px #bbb;
+   border-radius: 4px 0 0 4px;
+   cursor: pointer;
+}
+
+#LenField label:hover {
+   color: #000;
+}
+
+#LenField label:first-of-type {
+   padding-left: 2px;
+   border-radius: 0;
+}
+
+#LenField label:last-of-type {
+   padding-right: 2px;
+   border-radius: 0 4px 4px 0;
+}
+
+
+/* Case toggle */
+
+#CaseField {
+   float: right;
+}
+
+input[type="radio"] {
+   display: none;
+}
+
+input[type="radio"] + label {
+   float: right;
+   width: 48px;
+   height: 16px;
+   margin: 0;
+   padding: 6px 0;
+   color: #999;
+   background-color: #ccc;
+   text-align: center;
+   border-bottom: solid 2px #999;
+   cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+   color: #000;
+}
+
+input[type="radio"]:checked + label {
+   color: #fff;
+   background-color: #365;
+   font-weight: bold;
+   border-bottom: solid 2px #032;
+}
+
+#CaseField label:first-of-type {
+   border-radius: 0 4px 4px 0;
+}
+
+#CaseField label:last-of-type {
+   border-radius: 4px 0 0 4px;
+}
+
+
+/* Field style for non-input elements */
+
+.Field {
+   height: 16px;
+   margin-top: 10px;
+   padding: 10px 5px;
+   font-size: 16px;
+   text-align: center;
+   border-radius: 4px;
+}
+
+
+/* Buttons */
+
+.Button:active {
+   margin-top: 2px !important;
+   border-bottom: 0 !important;
+}
+
+
+/* Generate button */
+
+#Generate {
+   padding-bottom: 8px;
+   color: #fff;
+   background-color: #365;
+   font-weight: bold;
+   border-bottom: solid 2px #032;
+   cursor: pointer;
+}
+
+#Generate:hover {
+   color: #fff;
+   background-color: #476;
+   border-bottom: solid 2px #143;
+}
+
+#Generate:active {
+   margin-top: 12px !important;
+}
+
+
+/* Output field */
+
+#Output, #Mask {
+   display: none;
+   color: #fff;
+   background-color: #666;
+   border: none;
+   font-family: monospace;
+   word-wrap: break-word;
+}
+
+#Output::selection {
+   background-color: #fff;
+   color: #333;
+}
+
+#Output::-moz-selection {
+   background-color: #fff;
+   color: #333;
+}
+
+
+/* Bookmarklet view */
+
+@media only screen and (max-width: 800px) {
+
+   body {
+      background-color: #fff;
+   }
+
+   #main {
+     margin: 0;
+     padding: 15px;
+     border-radius: 0;
+   }
+
+   #Output {
+     height: auto;
+   }
+
+}

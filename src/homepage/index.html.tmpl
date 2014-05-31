@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <title>GenPass</title>
+
+  </head>
+
+  <body>
+
+    <header>
+      <p><a href="/"><img src="/assets/img/gp.png" height="200" width="300" border="0" alt="Key"></a></p>
+    </header>
+
+    <section>
+
+      <p><strong>GenPass</strong> is a JavaScript/MD5 bookmarklet-based password generator. <strong>GenPass is no longer being updated.</strong> Please consider using <a href="http://www.supergenpass.com">SuperGenPass</a>; however, note that SuperGenPass is not compatible with GenPass—given the same input, they generate different passwords.</p>
+
+      <div id="actions">
+
+        <div class="bookmarklet well">
+          <p><a rel="nofollow" href="<%= grunt.file.read('bookmarklet/bookmarklet.min.js') %>" onclick="return false;">GenPass</a></p>
+          <p>Drag this to your bookmarks toolbar. (Or right-click and add to bookmarks.)</p>
+        </div>
+        <div class="mobile well">
+          <p><a id="mobile" href="https://chriszarate.github.io/genpass/mobile/">Mobile</a></p>
+          <p>Use on public computers and mobile devices. (Add it to your home screen!)</p>
+        </div>
+
+        <br clear="both">
+
+      </div>
+
+      <h3>Problems?</h3>
+      <p>Please <a href="https://github.com/chriszarate/genpass/issues">log an issue on GitHub</a>.</p>
+
+    </section>
+
+  </body>
+
+</html>
